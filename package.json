@@ -1,0 +1,28 @@
+{
+  "name": "430-project-1",
+  "version": "1.0.0",
+  "description": "Project 1, Marvel Legendary game generator api project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Tests complete\"",
+    "start": "node .src/server.js",
+    "pretest": "eslint ./src --fix",
+    "nodemon": "nodemon --watch ./src ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-Munoz/430-Project-1.git"
+  },
+  "author": "Alexia Munoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A-Munoz/430-Project-1/issues"
+  },
+  "homepage": "https://github.com/A-Munoz/430-Project-1#readme",
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "nodemon": "^1.18.4"
+  },
+}
