@@ -4,7 +4,9 @@
   "description": "Marvel Legendary API",
   "main": "./src/server.js",
   "scripts": {
-    "start": "node ./src/server.js"
+   "test": "echo \"Tests complete\"",
+    "start": "node .src/server.js",
+    "pretest": "eslint ./src --fix"
    
   },
   "repository": {
