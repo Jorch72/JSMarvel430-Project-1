@@ -1,0 +1,153 @@
+[
+    {
+        "name":"TEST",
+        "team":"Illuminati",
+        "cards":
+        {
+            "card":[
+                  
+                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
+                   
+                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
+                   
+                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
+                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
+                ]
+                
+        },
+        "tags":
+        {
+            "tag":[
+                {"word":""}
+                 
+            ]
+        }
+        
+    },
+    {
+        "name":"TEST",
+        "team":"Illuminati",
+        "cards":
+        {
+            "card":[
+                  
+                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
+                   
+                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
+                   
+                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
+                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
+                ]
+                
+        },
+        "tags":
+        {
+            "tag":[
+                {"word":""}
+                 
+            ]
+        }
+        
+    },
+      {
+        "name":"TEST",
+        "team":"Illuminati",
+        "cards":
+        {
+            "card":[
+                  
+                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
+                   
+                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
+                   
+                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
+                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
+                ]
+                
+        },
+        "tags":
+        {
+            "tag":[
+                {"word":""}
+                 
+            ]
+        }
+        
+    },
+       {
+        "name":"TEST",
+        "team":"Illuminati",
+        "cards":
+        {
+            "card":[
+                  
+                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
+                   
+                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
+                   
+                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
+                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
+                ]
+                
+        },
+        "tags":
+        {
+            "tag":[
+                {"word":""}
+                 
+            ]
+        }
+        
+    },
+     {
+        "name":"TEST",
+        "team":"Illuminati",
+        "cards":
+        {
+            "card":[
+                  
+                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
+                   
+                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
+                   
+                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
+                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
+                ]
+                
+        },
+        "tags":
+        {
+            "tag":[
+                {"word":""}
+                 
+            ]
+        }
+        
+    },
+        {
+        "name":"TEST",
+        "team":"Illuminati",
+        "cards":
+        {
+            "card":[
+                  
+                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
+                   
+                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
+                   
+                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
+                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
+                ]
+                
+        },
+        "tags":
+        {
+            "tag":[
+                {"word":""}
+                 
+            ]
+        }
+        
+    }
+     
+]
