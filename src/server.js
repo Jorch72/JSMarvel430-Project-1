@@ -1,81 +1,105 @@
 const http = require('http');
 const url = require('url');
 const query = require('querystring');
+
 const htmlHandler = require('./htmlResponses.js');
+
 const jsonHandler = require('./jsonResponse.js');
-const loadJSON = require('./loadJSON.js');
+
+const loadHandler = require('./loadJSON.js');
+
 
 const port = process.env.PORT || process.env.NODE_PORT || 3000;
 
-const loadData = () => {
-   loadJSON.loadChamps(); 
-   loadJSON.loadMasterminds();   
+const loadFiles = () => {
+  loadHandler.loadChamps();
+  loadHandler.loadMasterminds();
 };
 
-/*onst handlePost = (request, response, parsedUrl) => {
-  if (parsedUrl.pathname === '/addUser') {
-    const body = [];
+// get the game
+const getRequest = (request, response, parsedUrl) => {
+const requirements = query.parse(parsedUrl.query);
+  switch (parsedUrl.pathname) {
+    case '/':
+      htmlHandler.getIndex(request, response);
+      break;
 
-    request.on('error', (err) => {
-      console.dir(err);
-      response.statusCode = 400;
+    case '/style.css':
+      htmlHandler.getCSS(request, response);
+      break;
+
+    case '/getGame':
+      jsonHandler.getGame(request, response, requirements);
+      break;
+
+    default:
+      jsonHandler.getUnreal(request, response);
+      break;
+  }
+};
+
+const headRequest = (request, response, parsedUrl) => {
+  switch (parsedUrl.pathname) {
+    case '/saveGame':
+    
+      break;
+
+    default:
+      jsonHandler.getUnrealMeta(request, response);
+      break;
+  }
+};
+
+const postRequest = (request, response, parsedUrl) => {
+  
+
+  switch (parsedUrl.pathname) {
+    case '/saveGame':
+      // Missing fields
+      if (newGame.name === '' || newGame.team === '') {
+        const responseJSON = {
+          id: 'missingParams',
+          message: 'Required fields missing',
+        };
+        const parsedResponse = JSON.stringify(responseJSON);
+
+        response.writeHead(400, { 'Content-Type': 'application/json' });
+        response.write(parsedResponse);
+        response.end();
+      } else {
+        jsonHandler.addTeam(request, response, newTeam);
+      }
+      break;
+
+    default:
       response.end();
-    });
-    request.on('data', (chunk) => {
-      body.push(chunk);
-    });
-
-    request.on('end', () => {
-      const bodyString = Buffer.concat(body).toString();
-      console.dir(bodyString);
-
-      const bodyParams = query.parse(bodyString);
-
-      jsonHandler.addUser(request, response, bodyParams);
-    });
-  }
-};*/
-
-const handleHead = (request, response, parsedUrl) => {
-  // route to correct method based on url
-  if (parsedUrl.pathname === '/getGame') {
-      
-    //jsonHandler.getGame(request, response);
-  } else if (parsedUrl.pathname === '/notReal') {
-    jsonHandler.notReal(request, response);
+      break;
   }
 };
 
-// handle GET requests
-const handleGet = (request, response, parsedUrl) => {
-  // route to correct method based on url
-  if (parsedUrl.pathname === '/') {
-    htmlHandler.getIndex(request, response);
-  } else if (parsedUrl.pathname === '/style.css') {
-    htmlHandler.getCSS(request, response);
-  } else if (parsedUrl.pathname === '/getGame') {
-    jsonHandler.getGame(request, response);
-  } else {
-    jsonHandler.notReal(request, response);
-  }
-};
-
-// function to handle requests
 const onRequest = (request, response) => {
   const parsedUrl = url.parse(request.url);
 
-  // check if method was POST, HEAD or GET
-  if (request.method === 'POST') {
-    handlePost(request, response, parsedUrl);
-  } else if (request.method === 'HEAD') {
-    handleHead(request, response, parsedUrl);
-  } else {
-    handleGet(request, response, parsedUrl);
+  switch (request.method) {
+    case 'GET':
+      getRequest(request, response, parsedUrl);
+      break;
+
+    case 'HEAD':
+      headRequest(request, response, parsedUrl);
+      break;
+
+    case 'POST':
+      postRequest(request, response, parsedUrl);
+      break;
+
+    default:
+      response.writeHead(501);
+      response.end();
+      break;
   }
 };
 
-// start server
 http.createServer(onRequest).listen(port);
-loadData();
-
-console.log(`Listening on 127.0.0.1: ${port}`);
+loadFiles();
+console.log(`Listening on localhost:${port}...`);

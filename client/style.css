@@ -1,19 +1,47 @@
-html, body {
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+html {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
+  background-color: #4C586F;
+}
+body{
+    margin: 5em, 10em, 5em, 10em;
+    font-family: 'PT Serif', serif;
 }
 
 #top {
   text-align: center;
-  margin: 0 auto;
+  align-content: center;
 }
 
-#top h1 {
+h1 {
   font-size: 2em;
+   background: -webkit-linear-gradient(#AF2000, #FFBF00,#871800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #FFB523;
 }
-
+ h2 {
+  font-size: 16px;
+  color: #CBC5C1;
+}
+input{
+    display: inline;
+    padding: 5px 20px 5px 20px;
+}
+#players{
+   
+    width: 50vw;
+}
+#types{
+ 
+    width: 50vw;
+}
+#input{
+    padding: .5em;
+}
 #content {
   margin-top: 100px;
   font-size: 2em;

@@ -1,81 +1,62 @@
-//arrays of cards
-const champs = [];
-const masterminds = [];
-
-//save teams
+// Data held in memory
 const teams = [];
 
-//created game
-const currentGame = {};
+// current team
+const team = {};
 
 const respondJSON = (request, response, status, object) => {
   response.writeHead(status, { 'Content-Type': 'application/json' });
   response.write(JSON.stringify(object));
   response.end();
 };
+const getGame = (request, response, requirements) =>{
+    var mastermind = getCards('mastermind','');
+    var champs = getCards('champ',requirements);
+    const responsJSON = {
+        team,
+    };
+    responsJSON(request, responsJSON, 200, responsJSON);
+    
+}
 
-const respondJSONMeta = (request, response, status) => {
-  response.writeHead(status, { 'Content-Type': 'application/json' });
+const addTeam = (request, response, newTeam) => {
+
+  if (teams[newTeam.name] == null) {
+    const responseJSON = {
+      message: `Team Saved as ${newTeam.name}`,
+    };
+    const parsedResponse = JSON.stringify(responseJSON);
+
+    teams[newTeam.name] = newTeam;
+    response.writeHead(201, { 'Content-Type': 'application/json' });
+    response.write(parsedResponse);
+    response.end();
+  } else { // Updated user
+    teams[newTeam.name] = newTeam;
+    response.writeHead(204, { 'Content-Type': 'application/json' });
+    response.end();
+  }
+};
+
+const getUnreal = (request, response) => {
+  const responseJSON = {
+    id: 'notFound',
+    message: 'The page you were looking for was not found',
+  };
+  const parsedResponse = JSON.stringify(responseJSON);
+
+  response.writeHead(404, { 'Content-Type': 'application/json' });
+  response.write(parsedResponse);
   response.end();
 };
 
-const getMastermind = () => {
-    const requirements = "none";
-    const i = 1; //this will be changed later to be a random number
-    
-    //console.log(masterminds[i].name);
-
-    
-    const copy = masterminds.slice(i);
-    currentGame.mastermind = copy;
-    
-    getChamps(requirements);
-}
-const getChamps = (req)=> {
-    if(req === "none"){
-        for(const b = 0; b < 4; b++){
-            const copy = champs.slice(b);
-            currentGame.champions = copy;
-        }
-    }else {
-        //switch statement to pull certian champions based on requirements
-        const copy = champs.slice(i);
-            currentGame.champions[i] = copy; 
-        console.log("fail")
-    }
-    
-}
-
-const getGame = (request, response) => {
-  if (request.method === 'GET') {
-      
-      getMastermind();
-      console.log(currentGame.mastermind.name);
-      
-    const responseJSON = {
-      currentGame,
-    };
-
-    respondJSON(request, response, 200, responseJSON);
-  } else {
-    respondJSONMeta(request, response, 200);
-  }
+const getUnrealMeta = (request, response) => {
+  response.writeHead(404, { 'Content-Type': 'application/json' });
+  response.end();
 };
 
-const notReal = (request, response) => {
-  if (request.method === 'GET') {
-    const responseJSON = {
-      id: 'notFound',
-      message: 'The page you are looking for was not found',
-    };
+module.exports.getGame = getGame;
 
-    respondJSON(request, response, 404, responseJSON);
-  } else {
-    respondJSONMeta(request, response, 404);
-  }
-};
-
-module.exports = {
-  getGame,
-  notReal,
-};
+module.exports.addTeam = addTeam;
+module.exports.getUnreal = getUnreal;
+module.exports.getUnrealMeta = getUnrealMeta;

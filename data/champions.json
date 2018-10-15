@@ -1,153 +1,194 @@
 [
     {
-        "name":"TEST",
+        "name":"Black Panther",
         "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+        "fight": "22",
+        "buy": "4",
+        "tags": "Black Panther ,Illuminati ,Fight ,Buy ,Brute ,Instinct ,Tech ,Special Ops ,Draw ,Recruit ,KO" 
+    },
+ {
+        "name":"Dr. Strange",
+        "team":"Illuminati",
+        "fight": "19",
+        "buy": "5",
+        "tags": "Dr. Strange ,Illuminati  ,fight ,buy ,Instinct ,Range ,Special Ops ,Teleport ,Draw ,Recruit ,KO"
         
     },
-    {
-        "name":"TEST",
+   {
+        "name":"Superior Iron Man",
         "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+        "fight": "20",
+        "buy": "6",
+        "tags": "Superior Iron Man ,Illuminati ,Fight ,Buy ,Tech ,Range ,Draw "
         
     },
-      {
-        "name":"TEST",
+ {
+        "name":"Blackbolt",
         "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+        "fight": "30",
+        "buy": "10",
+        "tags": "Blackbolt ,Illuminati ,Fight ,Buy ,Brute ,Range ,Special Ops"
         
     },
-       {
-        "name":"TEST",
+{
+        "name":"Beast",
         "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+        "fight": "20",
+        "buy": "0",
+        "tags": "Beast ,Illuminati ,Fight ,Brute ,Tech ,Draw ,Patrol ,Wall-crawl"
         
     },
-     {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+{
+        "name":"Captain America (Falcon)",
+        "team":"Avengers",
+        "fight": "22",
+        "buy": "10",
+        "tags": "Captain America (Falcon) ,Fight ,Buy ,Falcon ,Avengers ,Instinct ,Range ,Tech ,Special Ops ,Rescue ,Savior"
         
     },
-        {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+{
+        "name":"Patriot / Hawkeye",
+        "team":"Avengers",
+        "fight": "6",
+        "buy": "9",
+        "tags": "Patriot ,Hawkeye ,Avengers ,Fight ,Buy ,Divided ,Brute ,Instinct ,Tech ,Special Ops ,Draw"
+        
+    },
+{
+        "name":"Hercules / Amadeus Cho",
+        "team":"Avengers",
+        "fight": "25",
+        "buy": "9",
+        "tags": "Hercules ,Amadeus Cho ,Avengers ,Fight Bbuy ,Divided ,Brute ,Instinct ,Tech ,Draw ,Rescue"
+        
+    },
+{
+        "name":"Luke Cage / Jessica Jones",
+        "team":"Avengers / Marvel Knights",
+        "fight": "45",
+        "buy": "5",
+        "tags": "Luke Cage ,Jessica Jones ,Avengers ,Marvel Knights ,Fight ,Buy ,Divided ,Brute ,Instinct ,Draw ,Fortify"
+        
+    },
+{
+        "name":"Peter Parker / Aunt May",
+        "team":"Avengers",
+        "fight": "15",
+        "buy": "8",
+        "tags": "Peter Parker ,Aunt May ,Avengers ,Divided ,Fight ,Buy ,Instinct ,Tech  ,Draw ,Recruit ,Rescue ,KO"
+        
+    },
+{
+        "name":"Falcon / Redwing",
+        "team":"Avengers",
+        "fight": "14",
+        "buy": "10",
+        "tags": "Falcon ,Redwing ,Avengers ,Divided ,Fight ,Buy ,Instinct ,Range ,Tech ,Draw ,Recruit"
+        
+    },
+{
+        "name":"Captain America Secret Avenger / Battlestar",
+        "team":"Avengers",
+        "fight": "21",
+        "buy": "0+",
+        "tags": "Captain America Secret Avenger ,Captain America ,Battlestar ,Avengers ,Divided ,Brute ,Instinct ,Range ,Tech ,Special Ops ,Fight ,Buy ,Recruit"
+        
+    },
+{
+        "name":"Captain America 1941",
+        "team":"Avengers",
+        "fight": "14",
+        "buy": "0",
+        "tags": "Captain America 1941 ,Captain America ,1941 ,Avengers ,Brute ,Instinct ,Tech ,Special Ops ,Fight ,Savior ,Man Out Of Time ,Rescue ,Draw"
+        
+    },
+{
+        "name":"The Captain And The Devil",
+        "team":"Avengers",
+        "fight": "25",
+        "buy": "5",
+        "tags": "The Captain And The Devil ,Captain America ,Avengers ,Brute ,Instinct ,Range ,Tech ,Special Ops ,Fight ,Buy ,Spectrum ,Patrol ,KO"
+        
+    },
+{
+        "name":"Goliath",
+        "team":"Avengers",
+        "fight": "29",
+        "buy": "10",
+        "tags": "Goliath ,Avengers ,Divided ,Brute ,Tech ,Fight ,Buy ,Draw ,Size-Changing"
+        
+    },
+{
+        "name":"Hulkling",
+        "team":"Avengers",
+        "fight": "24",
+        "buy": "15",
+        "tags": "Hulkling ,Avengers ,Divided ,Brute ,Special Ops ,Fight ,Buy ,Copy ,Size-Changing , KO"
+},
+{
+        "name":"Cloak / Dagger",
+        "team":"Avengers",
+        "fight": "33",
+        "buy": "19",
+        "tags": "Cloak / Dagger ,Cloak ,Dagger ,Avengers ,Divided ,Range ,Special Ops ,Fight ,Buy ,Phasing ,Draw ,KO"
+        
+    },
+{
+        "name":"Captain Marvel",
+        "team":"Avengers",
+        "fight": "19",
+        "buy": "10",
+        "tags": "Captain Marvel ,Avengers ,Brute ,Range ,Fight ,Buy ,Draw"
+        
+    },
+{
+        "name":"Wiccan",
+        "team":"Avengers",
+        "fight": "19",
+        "buy": "5",
+        "tags": "Wiccan ,Avengers ,Divided ,Range ,Special Ops ,Fight ,Buy ,Draw ,Phasing"
+        
+    },
+{
+        "name":"Tigra",
+        "team":"Avengers",
+        "fight": "21",
+        "buy": "5",
+        "tags": "Tigra ,Avengers ,Divided ,Instinct ,Special Ops ,Fight ,Buy ,Draw ,Recruit ,KO"
+        
+    },
+{
+        "name":"Captain America",
+        "team":"Avengers",
+        "fight": "15",
+        "buy": "0+",
+        "tags": "Captain America ,Avengers ,Brute ,Instinct ,Tech ,Special Ops ,Fight ,Buy ,Draw"
+        
+    },
+{
+        "name":"Thor",
+        "team":"Avengers",
+        "fight": "9",
+        "buy": "25",
+        "tags": "Thor ,Avengers ,Brute ,Range ,Fight ,Buy"
+        
+    },
+{
+        "name":"Lady Thor",
+        "team":"Avengers",
+        "fight": "12",
+        "buy": "24",
+        "tags": "Lady Thor ,Avengers ,Brute ,Range ,Fight ,Buy ,Draw"
+        
+    },
+{
+        "name":"Daredevil / Iron Fist",
+        "team":"Avengers",
+        "fight": "14",
+        "buy": "9",
+        "tags": "Daredevil ,Iron Fist ,Avengers ,Divided ,Brute ,Instinct, Special Ops ,Fight ,Buy ,Draw ,Recruit"
         
     }
-     
+
+
 ]

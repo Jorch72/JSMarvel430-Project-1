@@ -1,153 +1,213 @@
 [
-    {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+   {
+        "name":"Onslaught",
+       "fight": "10"
         
     },
-    {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+{
+        "name":"Epic Pagliacci",
+        "fight": "11"
         
     },
-      {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+{
+        "name":"Mojo",
+        "fight": "6"
         
     },
-       {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+{
+        "name":"Spider Queen",
+        "fight": "8"
         
     },
-     {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
-                
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+{
+        "name":"Mephisto",
+        "fight": "10"
         
     },
-        {
-        "name":"TEST",
-        "team":"Illuminati",
-        "cards":
-        {
-            "card":[
-                  
-                    {"name": "Multifaceted Genius", "ability": "You get +1 fight for each multicolored card you played this turn.", "cost": "4", "action": "Fight", "actionPoints":"2", "class":"Tech,Brute"},
-                   
-                    {"name": "Catlike Reflexes", "ability": "Draw a Card", "cost": "3", "action": "Recruit", "actionPoints":"1", "class":"Instint, Tech"},
-                   
-                    {"name": "King of Wakanda", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""},
-                    {"name": "", "ability": "", "cost": "", "action": "", "actionPoints":"", "class":""}
-                ]
+{
+        "name":"Shadow King",
+        "fight": "7"
+        
+    },
+{
+        "name":"Dark Phoenix",
+        "fight": "13"
+        
+    },
+{
+        "name":"Deathbird",
+        "fight": "8"
+        
+    },
+{
+        "name":"Arcade",
+        "fight": "3"
+        
+    },
+{
+        "name":"The Goblin, Underworld Boss",
+        "fight": "10"
+        
+    },
+{
+        "name":"Charles Xavier, Professor Of Crime",
+        "fight": "8"
+       
+    },
+{
+        "name":"Wasteland Hulk",
+        "fight": "7"
+        
+    },
+{
+        "name":"Ragnarok",
+        "fight": "6+"
+        
+    },
+{
+        "name":"Loki",
+        "fight": "10"
+        
+    },
+{
+        "name":"Authoritarian Iron Man",
+        "fight": "12"
+        
+    },
+{
+        "name":"Galactus",
+        "fight": "20"
+        
+    },
+{
+        "name":"Nimrod, Super Sentinel",
+        "fight": "6"
                 
-        },
-        "tags":
-        {
-            "tag":[
-                {"word":""}
-                 
-            ]
-        }
+    },
+{
+        "name":"Mr. Sinister",
+        "fight": "8+"
+                
+    },
+{
+        "name":"Mysterio",
+        "fight": "8"
+                
+    },
+{
+        "name":"King Hyperion",
+        "fight": "12"
+                
+    },
+{
+        "name":"Misty Knight",
+        "fight": "14"
+                
+    },
+{
+        "name":"Baron Heinrich Zemo",
+        "fight": "9+"
+                
+    },
+{
+        "name":"Kingpin",
+        "fight": "13"
+                
+    },
+{
+        "name":"Evil Deadpool",
+        "fight": "11+"
+                
+    },
+{
+        "name":"Maria Hill, Director of S.HI.E.L.D.",
+        "fight": "7"
+                
+    },
+{
+        "name":"Immortal Emperor Zheng Zhu",
+        "fight": "7+"
+                
+    },
+{
+        "name":"Red Skull",
+        "fight": "7"
+        
+    },
+{
+        "name":"Stryfe",
+        "fight": "7+"
+        
+    },
+{
+        "name":"Dr. Doom",
+        "fight": "9"
+        
+    },
+{
+        "name":"Shiklah, The Demon Bride",
+        "fight": "9"
+        
+    },
+{
+        "name":"Carnage",
+        "fight": "9"
+        
+    },
+{
+        "name":"Madelyne Pryor, Goblin Queen",
+        "fight": "10"
+        
+    },
+{
+        "name":"Arnim Zola",
+        "fight": "6+"
+        
+    },
+{
+        "name":"Magneto",
+        "fight": "8"
+        
+    },
+{
+        "name":"Macho Gomez",
+        "fight": "9+"
+        
+    },
+{
+        "name":"Mole Man",
+        "fight": "7+"
+        
+    },
+{
+        "name":"Supreme Intelligence of Kree",
+        "fight": "9"
+        
+    },
+{
+        "name":"Thanos",
+        "fight": "24"
+        
+    },
+{
+        "name":"Zombie Green Goblin",
+        "fight": "11+"
+        
+    },
+{
+        "name":"Apocalypse",
+        "fight": "12"
+        
+    },
+{
+        "name":"Baron Helmut Zemo",
+        "fight": "16"
+        
+    },
+{
+        "name":"Fin Fang Foom",
+        "fight": "20"
         
     }
-     
+
 ]

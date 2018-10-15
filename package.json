@@ -1,26 +1,21 @@
 {
-  "name": "430-project-1",
+  "name": "http-api-assignment-ii-master",
   "version": "1.0.0",
-  "description": "Marvel Legendary API",
-  "main": "./src/server.js",
+  "description": "",
+  "engines": {
+    "node": "10.9.0",
+    "npm": "6.2.0"
+  },
+  "main": "index.js",
   "scripts": {
-   "test": "echo \"Tests complete\"",
-    "start": "node .src/server.js",
-    "pretest": "eslint ./src --fix"
-   
+    "start": "node ./src/server.js",
+    "pretest": "eslint ./src --fix",
+    "test": "echo \"Tests Complete\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/A-Munoz/430-Project-1.git"
-  },
-  "author": "Alexia Munoz",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/A-Munoz/430-Project-1/issues"
-  },
-  "homepage": "https://github.com/A-Munoz/430-Project-1#readme",
   "devDependencies": {
-    "eslint": "^5.6.1",
+    "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0"
   }

@@ -1,133 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Legendary: Game Generator</title>
+  <title>Project 1: Legendary</title>
   <link rel="stylesheet" type="text/css" href="/style.css">
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
   <script type="text/babel">
-   / // function to parse our response
-    const parseJSON = (xhr, content) => {
-
-      const obj = JSON.parse(xhr.response);
-      console.dir(obj);
-      
- 
-      if(obj.message) {
-        const p = document.createElement('p');
-        p.textContent = `Message: ${obj.message}`;
-        content.appendChild(p);
-      }
-      
-
-      if(obj.users) {
-        const userList = document.createElement('p');
-        const users = JSON.stringify(obj.users);
-        userList.textContent = users;
-        content.appendChild(userList);
-      }
-    };
-
-    const handleResponse = (xhr, parseResponse) => {
-      const content = document.querySelector('#content');
-      
- 
-      switch(xhr.status) {
+    const handleResponse = (xhr) => {
+      const contentDiv = document.querySelector("#content");
+      contentDiv.innerHTML = "";
+      const b = document.createElement("b");
+      switch(xhr.status){
         case 200:
-          content.innerHTML = `<b>Success</b>`;
+          b.innerHTML = "Success";
           break;
         case 201:
-          content.innerHTML = '<b>Create</b>';
+          b.innerHTML = "Created";
           break;
         case 204:
-          content.innerHTML = '<b>Updated (No Content)</b>';
-          return;
+          b.innerHTML = "Updated";
+          break;
         case 400:
-          content.innerHTML = `<b>Bad Request</b>`;
+          b.innerHTML = "Bad Request";
           break;
         case 404:
-          content.innerHTML = `<b>Resource Not Found</b>`;
+          b.innerHTML = "Resource not Found";
           break;
-        default:
-          content.innerHTML = `Error code not implemented by client.`;
-          break;
+      }
+      contentDiv.appendChild(b);
+      if(xhr.response === ""){
+        return;
       }
       
-      if (parseResponse) {
-        parseJSON(xhr, content);
+      const responseJSON = JSON.parse(xhr.responseText);
+      const p = document.createElement("p");
+      if(responseJSON.message != null){
+        p.innerHTML = responseJSON.message;
       }
+      contentDiv.appendChild(p);
     };
-   
-    const sendPost = (e, game) => {
-      getGame();
-        console.log(current)
-      /*const nameAction = nameForm.getAttribute('action');
-      const nameMethod = nameForm.getAttribute('method');
-      
-      const nameField = nameForm.querySelector('#nameField');
-      const ageField = nameForm.querySelector('#ageField');
-      
-      const xhr = new XMLHttpRequest();
- 
-      xhr.open(nameMethod, nameAction);
-      
-      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-     
-      xhr.setRequestHeader ('Accept', 'application/json');
-      
-      xhr.onload = () => handleResponse(xhr, true);
-      const formData = `name=${nameField.value}&age=${ageField.value}`;
-      
-      
-      xhr.send(formData);*/
+     const sendPost = (e, gameSearch) => {
+         
+         var requirements = [];
+         if(document.getElementById("Instinct").checked){
+             requirements.push("Instinct");
+         }if(document.getElementById("Brute").checked){
+             requirements.push("Brute");
+         }if(document.getElementById("Tech").checked){
+             requirements.push("Tech");
+         }if(document.getElementById("Special").checked){
+             requirements.push("Special Ops");
+         }
+         
     
+      //const formData = `requirements=${requirements}&players=${players.value}`;
       
+      //xhr.send(formData);
+    
+     
       e.preventDefault();
       
       return false;
-    };
-    
-    const requestUpdate = (e, userForm) => {
-      
-      const url = userForm.querySelector('#urlField').value;
-      
-      const type = userForm.querySelector('#methodSelect').value;
-      
-      const xhr = new XMLHttpRequest();
-      xhr.open(type, url);
-      xhr.setRequestHeader('Accept', type);
-      if (type === 'get') {
-        xhr.onload = () => handleResponse(xhr, true);
-      } else {
-        xhr.onload = () => handleResponse(xhr, false);
-      }
-      
-      
-      xhr.send();
-      
-     
-      e.preventDefault();
-  
-      return false;
-    };
+     }
     const init = () => {
-      const generate = document.querySelector('#generate');
-
-      const createGame = (e) => sendPost(e, generate);
-
-      nameForm.addEventListener('submit', createGame);
-        
+      const getSearch = document.querySelector("#getSearch");
+      getSearch.addEventListener("submit", sendPost);
+      const nameForm = document.querySelector("#saveGame");
+      nameForm.addEventListener("submit", );
     };
     window.onload = init;
   </script>
 </head>
 <body>
   <section id="top">
-    <h3>Marvel Game generator</h3>
-  
-
-    <form id="generate" action="/getGame" method="get">
-      <input type="submit" value="generate" />
+    <h1>Legendary: Marvel Deck Builder Game Generator</h1>
+    <form id="gameSearch" action="/getGame" method="get">
+     <section id="players">
+      <h2>How Player:</h2>
+      <h2>2 Players:<input type="radio" name="players" value="2"></h2>
+      <h2>3 Players:<input type="radio" name="players" value="3"></h2>
+      <h2>4 Players:<input type="radio" name="players" value="4"></h2>
+      <h2>5 Players:<input type="radio" name="players" value="5"></h2>
+    </section>
+    <section id="types">
+      <h2>Types</h2>
+      <h2>Instint<input type="checkbox" name="Instinct" value="Instinct"> </h2>
+      <h2>Brute<input type="checkbox" name="Brute" value="Brute"></h2>
+      <h2>Tech<input type="checkbox" name="Tech" value="Tech"></h2>
+      <h2>Special Ops<input type="checkbox" name="Special" value="Special Ops"></h2>
+    </section>
+      <input type="submit" value="get Game" />
+    </form>
+    <form id="saveGame" action="/" method="get">
+      <input type="submit" value="save Game" />
     </form>
   </section>
   <section id="content">
